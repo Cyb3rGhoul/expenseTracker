@@ -1,0 +1,183 @@
+/* Global styles */
+body {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Main content container */
+.main {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2F3C7E;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #2F3C7E;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.block {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    border: 2px solid #2F3C7E;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.block:hover {
+    transform: scale(1.05);
+}
+
+.entries {
+    margin-bottom: 10px;
+}
+
+.entry {
+    background-color: #FBEAEB;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.entry button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.entry button:hover {
+    background-color: #d32f2f;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2F3C7E;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.addButt{
+    width: 100%;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #1d2951;
+}
+
+h3 {
+    text-align: center;
+    color: #2F3C7E;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .block {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    input, button {
+        font-size: 1.1em;
+    }
+
+    .entry {
+        font-size: 0.9em;
+    }
+
+    .entry button {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .block {
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .entry {
+        font-size: 0.8em;
+    }
+}

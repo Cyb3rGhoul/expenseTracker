@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main">
+        <h1>Expense Tracker</h1>
+
+        <section id="total-calculator">
+            <h2>Total Expense Calculator</h2>
+            <div class="blocks-container">
+                <!-- Default Blocks -->
+                <div class="block" id="traveling">
+                    <h3>Traveling</h3>
+                    <div class="entries"></div>
+                    <button onclick="addEntry('traveling')">Add Entry</button>
+                </div>
+                <div class="block" id="food">
+                    <h3>Food</h3>
+                    <div class="entries"></div>
+                    <button onclick="addEntry('food')">Add Entry</button>
+                </div>
+                <div class="block" id="shopping">
+                    <h3>Shopping</h3>
+                    <div class="entries"></div>
+                    <button onclick="addEntry('shopping')">Add Entry</button>
+                </div>
+                <div class="block" id="miscellaneous">
+                    <h3>Miscellaneous</h3>
+                    <div class="entries"></div>
+                    <button onclick="addEntry('miscellaneous')">Add Entry</button>
+                </div>
+                <div>
+                    <button class="addButt" onclick="addNewBlock()">Add New Block</button>
+                </div>
+            </div>
+            <h3>Total Expenses: <span id="total-expenses">0</span></h3>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
